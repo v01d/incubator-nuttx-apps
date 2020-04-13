@@ -1,0 +1,3 @@
+ifneq ($(CONFIG_EXAMPLES_PM),)
+CONFIGURED_APPS += $(APPDIR)/examples/pm
+endif

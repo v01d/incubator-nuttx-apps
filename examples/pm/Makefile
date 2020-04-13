@@ -1,0 +1,20 @@
+-include $(TOPDIR)/Make.defs
+
+# Application Settings
+
+CONFIG_PM_PRIORITY ?= SCHED_PRIORITY_DEFAULT
+CONFIG_PM_STACKSIZE ?= 2048
+
+PRIORITY  = $(CONFIG_PM_PRIORITY)
+STACKSIZE = $(CONFIG_PM_STACKSIZE)
+
+# Sources
+
+ASRCS =
+CSRCS =
+MAINSRC = pm.c
+
+PROGNAME = pm
+MODULE = CONFIG_EXAMPLES_PM
+
+include $(APPDIR)/Application.mk
