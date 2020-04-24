@@ -46,6 +46,7 @@
 #include <fcntl.h>
 #include <stdio.h>
 #include <signal.h>
+#include <stdlib.h>
 
 /****************************************************************************
  * Public Functions
@@ -73,6 +74,12 @@ int main(int argc, char *argv[])
   sigset_t set;
   int fd;
 
+  if (argc < 2)
+    {
+      fprintf(stderr, "Usage: pm <sleep seconds>\n");
+      return ERROR;
+    }
+
   printf("abcdefg\n");
   usleep(20000);
 
@@ -95,7 +102,7 @@ int main(int argc, char *argv[])
   periodic.pid = 0;
   periodic.event.sigev_signo = 1;
   periodic.event.sigev_notify = SIGEV_SIGNAL;
-  periodic.period.tv_sec = 5;
+  periodic.period.tv_sec = atoi(argv[1]);
   periodic.period.tv_nsec = 0;
 
   ioctl(fd, RTC_SET_PERIODIC, (unsigned long)((uintptr_t)&periodic));
