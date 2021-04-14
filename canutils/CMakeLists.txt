@@ -1,0 +1,7 @@
+add_subdirectory(candump)
+add_subdirectory(canlib)
+add_subdirectory(cansend)
+add_subdirectory(libcanard)
+add_subdirectory(libcanutils)
+add_subdirectory(libobd2)
+add_subdirectory(slcan)

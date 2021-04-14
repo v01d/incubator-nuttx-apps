@@ -38,7 +38,7 @@
  * Included Files
  ****************************************************************************/
 
-#include "config.h"
+#include <nuttx/config.h>
 
 #include <sys/wait.h>
 #include <stdint.h>

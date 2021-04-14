@@ -1,0 +1,8 @@
+if(CONFIG_EXAMPLES_CAMERA)
+  nuttx_add_application(
+    NAME ${CONFIG_EXAMPLES_CAMERA_PROGNAME}
+    PRIORITY ${CONFIG_EXAMPLES_CAMERA_PRIORITY}
+    STACKSIZE ${CONFIG_EXAMPLES_CAMERA_STACKSIZE}
+    SRCS camera_fileutil.c camera_main.c
+  )
+endif()

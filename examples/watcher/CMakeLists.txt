@@ -1,0 +1,8 @@
+if (CONFIG_EXAMPLES_WATCHER)
+  nuttx_add_application(
+    NAME ${CONFIG_EXAMPLES_WATCHER_PROGNAME}
+    PRIORITY ${CONFIG_EXAMPLES_WATCHER_PRIORITY}
+    STACKSIZE ${CONFIG_EXAMPLES_WATCHER_STACKSIZE}
+    SRCS watcher_main.c ramdisk.c wdt.c task_mn.c
+  )
+endif()

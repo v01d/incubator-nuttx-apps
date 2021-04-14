@@ -20,7 +20,6 @@
 /bin
 /boot_romfsimg.h
 /external
-/Kconfig
 /romfs.img
 /symtab_apps.c
 cscope.out

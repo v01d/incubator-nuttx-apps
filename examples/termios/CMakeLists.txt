@@ -1,0 +1,8 @@
+if (CONFIG_EXAMPLES_TERMIOS)
+  nuttx_add_application(
+    NAME termios
+    PRIORITY ${CONFIG_EXAMPLES_TERMIOS_PRIORITY}
+    STACKSIZE ${CONFIG_EXAMPLES_TERMIOS_STACKSIZE}
+    SRCS termios_main.c
+  )
+endif()
