@@ -40,7 +40,11 @@
  * Included Files
  ****************************************************************************/
 
+#ifdef __NuttX__
+#include <nuttx/config.h>
+#else
 #include "config.h"
+#endif
 
 #include <arpa/inet.h>
 

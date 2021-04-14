@@ -1,0 +1,12 @@
+if (CONFIG_SYSTEM_TRACE)
+  set(SRCS)
+  if (CONFIG_DRIVER_NOTERAM)
+    list(APPEND SRCS trace_dump.c)
+  endif()
+
+  nuttx_add_application(
+    NAME ${CONFIG_SYSTEM_TRACE_PROGNAME}
+    PRIORITY ${CONFIG_SYSTEM_TRACE_PRIORITY}
+    STACKSIZE ${CONFIG_SYSTEM_TRACE_STACKSIZE}
+    SRCS trace.c ${SRCS})
+endif()

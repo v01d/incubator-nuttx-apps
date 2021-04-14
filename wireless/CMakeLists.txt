@@ -1,0 +1,5 @@
+add_subdirectory(bluetooth)
+add_subdirectory(gs2200m)
+add_subdirectory(ieee802154)
+add_subdirectory(iwpan)
+add_subdirectory(wapi)

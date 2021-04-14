@@ -407,7 +407,7 @@ static void usbmsc_disconnect(FAR void *handle)
  *
  ****************************************************************************/
 
-int main(int argc, FAR char *argv[])
+int msconn_main(int argc, FAR char *argv[])
 {
   struct boardioc_usbdev_ctrl_s ctrl;
   FAR void *handle = NULL;

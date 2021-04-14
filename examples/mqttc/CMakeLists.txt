@@ -1,0 +1,7 @@
+if(CONFIG_EXAMPLES_MQTTC)
+  nuttx_add_application(
+    NAME ${CONFIG_EXAMPLES_MQTTC_PROGNAME}
+    STACKSIZE ${CONFIG_EXAMPLES_MQTTC_STACKSIZE}
+    SRCS mqttc_pub.c
+  )
+endif()

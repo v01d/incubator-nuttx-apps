@@ -1,0 +1,7 @@
+add_subdirectory(bas)
+add_subdirectory(duktape)
+add_subdirectory(ficl)
+add_subdirectory(minibasic)
+add_subdirectory(quickjs)
+add_subdirectory(wamr)
+add_subdirectory(wasm3)

@@ -37,7 +37,11 @@
  * Included Files
  ****************************************************************************/
 
+#ifdef __NuttX__
+#include <nuttx/config.h>
+#else
 #include "config.h"
+#endif
 
 #include <stdlib.h>
 #include <stdio.h>
